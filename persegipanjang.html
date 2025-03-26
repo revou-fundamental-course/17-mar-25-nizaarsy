@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kettik Kalkulator Persegi Panjang</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kettik Kalkulator Matematik</h1>
+        <h2>Welcome to Katik</h2>
+        <p>Aplikasi ini siap membantu kamu menghitung luas dan keliling bangun datar dengan cepat dan mudah.
+        <br>Cukup masukkan angka, dan hasilnya langsung keluar!
+        <br>Ayo mulai hitung sekarang!✨</p>
+        
+        <!-- Tambahan Gambar -->
+        <div class="image-container">
+            <img src="./image/persegi panjang.png" alt="Rumus Persegi Panjang" class="responsive-image">
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="index.html" class="nav-button">Persegi</a>
+            <a href="persegipanjang.html" class="nav-button">Persegi Panjang</a>
+        </div>
+
+        <!-- Kalkulator Luas Persegi Panjang -->
+        <div class="calculator">
+            <h3>Hitung Luas Persegi Panjang</h3>
+            <label for="lengthArea">Panjang:</label>
+            <input type="number" id="lengthArea" placeholder="Masukkan panjang">
+            
+            <label for="widthArea">Lebar:</label>
+            <input type="number" id="widthArea" placeholder="Masukkan lebar">
+            
+            <button onclick="calculateArea()">Hitung Luas</button>
+            <button onclick="resetArea()">Reset</button>
+            
+            <div id="resultArea" class="result">
+                <h4>Luas Persegi Panjang:</h4>
+                <p id="areaCalculation"></p>
+                <p id="areaResult"></p>
+            </div>
+        </div>
+
+        <!-- Kalkulator Keliling Persegi Panjang -->
+        <div class="calculator">
+            <h3>Hitung Keliling Persegi Panjang</h3>
+            <label for="lengthPerimeter">Panjang:</label>
+            <input type="number" id="lengthPerimeter" placeholder="Masukkan panjang">
+            
+            <label for="widthPerimeter">Lebar:</label>
+            <input type="number" id="widthPerimeter" placeholder="Masukkan lebar">
+            
+            <button onclick="calculatePerimeter()">Hitung Keliling</button>
+            <button onclick="resetPerimeter()">Reset</button>
+            
+            <div id="resultPerimeter" class="result">
+                <h4>Keliling Persegi Panjang:</h4>
+                <p id="perimeterCalculation"></p>
+                <p id="perimeterResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/scriptpersegipanjang.js"></script>
+</body>
+</html>

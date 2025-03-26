@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kettik Kalkulator Matematik</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Kettik Kalkulator Matematik</h1>
+        <h2>Welcome to Katik</h2>
+        <p>Aplikasi ini siap membantu kamu menghitung luas dan keliling bangun datar dengan cepat dan mudah.
+        <br>Cukup masukkan angka, dan hasilnya langsung keluar!
+        <br>Ayo mulai hitung sekarang!✨</p>
+        
+        <!-- Tambahan Gambar -->
+        <div class="image-container">
+            <img src="./image/persegi.jpg" alt="Rumus Persegi" class="responsive-image">
+        </div>
+
+        <div class="navigation-buttons">
+            <a href="index.html" class="nav-button">Persegi</a>
+            <a href="persegipanjang.html" class="nav-button">Persegi Panjang</a>
+        </div>
+
+        <!-- Bagian Luas Persegi -->
+        <div class="calculator">
+            <h3>Hitung Luas Persegi</h3>
+            <label for="sideLength">Panjang Sisi:</label>
+            <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+            
+        <!-- Untuk Luas -->
+        <button onclick="calculateArea()">Hitung Luas</button>
+        <button onclick="resetArea()">Reset</button>
+
+
+            
+            <div id="resultArea" class="result">
+                <h4>Luas Persegi:</h4>
+                <p id="areaCalculation"></p>
+                <p id="areaResult"></p>
+            </div>
+        </div>
+
+        <!-- Bagian Keliling Persegi -->
+        <div class="calculator">
+            <h3>Hitung Keliling Persegi</h3>
+            <label for="sideLengthPerimeter">Panjang Sisi:</label>
+            <input type="number" id="sideLengthPerimeter" placeholder="Masukkan panjang sisi">
+            
+        <!-- Untuk Keliling -->
+        <button onclick="calculatePerimeter()">Hitung Keliling</button>
+        <button onclick="resetPerimeter()">Reset</button>
+
+            
+            <div id="resultPerimeter" class="result">
+                <h4>Keliling Persegi:</h4>
+                <p id="perimeterCalculation"></p>
+                <p id="perimeterResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
